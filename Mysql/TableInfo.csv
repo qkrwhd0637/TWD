@@ -1,0 +1,19 @@
+TABLE_SCHEMA,TABLE_NAME,TABLE_COMMENT,COLUMN_COMMENT,COLUMN_NAME,COLUMN_TYPE,IS_NULLABLE,COLUMN_KEY
+twdef,play_tb,,,id,varchar(20),NO,PRI
+twdef,play_tb,,,top_round,int,YES,
+twdef,play_tb,,,last_round,int,YES,
+twdef,user_tb,"사용자 정보 테이블
+작성시기 20210514
+작성자 박종욱",,id,varchar(20),NO,PRI
+twdef,user_tb,"사용자 정보 테이블
+작성시기 20210514
+작성자 박종욱",,password,blob,NO,
+twdef,user_tb,"사용자 정보 테이블
+작성시기 20210514
+작성자 박종욱",,access_date,datetime,YES,
+twdef,user_tb,"사용자 정보 테이블
+작성시기 20210514
+작성자 박종욱",,edit_date,datetime,YES,
+twdef,user_tb,"사용자 정보 테이블
+작성시기 20210514
+작성자 박종욱",,make_date,datetime,YES,
