@@ -1,0 +1,67 @@
+[2021-08-20 16:32:24:644] MySql User Info Select : MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication method 'caching_sha2_password' not supported by any of the available plugins.
+  at MySql.Data.MySqlClient.Authentication.AuthenticationPluginManager.GetPlugin (System.String method) [0x0001d] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.GetPlugin (System.String method, MySql.Data.MySqlClient.NativeDriver driver, System.Byte[] authData) [0x0001f] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.NativeDriver.Authenticate (System.String authMethod, System.Boolean reset) [0x00017] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.NativeDriver.Open () [0x00317] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Driver.Open () [0x0000b] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Driver.Create (MySql.Data.MySqlClient.MySqlConnectionStringBuilder settings) [0x0004d] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection () [0x00000] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection () [0x00083] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver () [0x00042] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.GetConnection () [0x0001c] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlConnection.Open () [0x0016c] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at System.Data.Common.DbDataAdapter.QuietOpen (System.Data.IDbConnection connection, System.Data.ConnectionState& originalState) [0x0000c] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at System.Data.Common.DbDataAdapter.FillInternal (System.Data.DataSet dataset, System.Data.DataTable[] datatables, System.Int32 startRecord, System.Int32 maxRecords, System.String srcTable, System.Data.IDbCommand command, System.Data.CommandBehavior behavior) [0x0002d] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at System.Data.Common.DbDataAdapter.Fill (System.Data.DataTable[] dataTables, System.Int32 startRecord, System.Int32 maxRecords, System.Data.IDbCommand command, System.Data.CommandBehavior behavior) [0x0007c] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at System.Data.Common.DbDataAdapter.Fill (System.Data.DataTable dataTable) [0x00034] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at (wrapper remoting-invoke-with-check) System.Data.Common.DbDataAdapter.Fill(System.Data.DataTable)
+  at DBRun.LoginProc.UserSel (System.String inid, System.String inPassword) [0x00042] in D:\Unity Source\TWD2\Assets\Script\DB\DB.cs:114 
+[2021-08-20 16:32:25:947] MySql User Info Select : MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication method 'caching_sha2_password' not supported by any of the available plugins.
+  at MySql.Data.MySqlClient.Authentication.AuthenticationPluginManager.GetPlugin (System.String method) [0x0001d] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.GetPlugin (System.String method, MySql.Data.MySqlClient.NativeDriver driver, System.Byte[] authData) [0x0001f] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.NativeDriver.Authenticate (System.String authMethod, System.Boolean reset) [0x00017] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.NativeDriver.Open () [0x00317] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Driver.Open () [0x0000b] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Driver.Create (MySql.Data.MySqlClient.MySqlConnectionStringBuilder settings) [0x0004d] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection () [0x00000] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection () [0x00083] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver () [0x00042] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.GetConnection () [0x0001c] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlConnection.Open () [0x0016c] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at System.Data.Common.DbDataAdapter.QuietOpen (System.Data.IDbConnection connection, System.Data.ConnectionState& originalState) [0x0000c] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at System.Data.Common.DbDataAdapter.FillInternal (System.Data.DataSet dataset, System.Data.DataTable[] datatables, System.Int32 startRecord, System.Int32 maxRecords, System.String srcTable, System.Data.IDbCommand command, System.Data.CommandBehavior behavior) [0x0002d] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at System.Data.Common.DbDataAdapter.Fill (System.Data.DataTable[] dataTables, System.Int32 startRecord, System.Int32 maxRecords, System.Data.IDbCommand command, System.Data.CommandBehavior behavior) [0x0007c] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at System.Data.Common.DbDataAdapter.Fill (System.Data.DataTable dataTable) [0x00034] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at (wrapper remoting-invoke-with-check) System.Data.Common.DbDataAdapter.Fill(System.Data.DataTable)
+  at DBRun.LoginProc.UserSel (System.String inid, System.String inPassword) [0x00042] in D:\Unity Source\TWD2\Assets\Script\DB\DB.cs:114 
+[2021-08-20 16:32:29:316] MySql User Info Insert : MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication method 'caching_sha2_password' not supported by any of the available plugins.
+  at MySql.Data.MySqlClient.Authentication.AuthenticationPluginManager.GetPlugin (System.String method) [0x0001d] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.GetPlugin (System.String method, MySql.Data.MySqlClient.NativeDriver driver, System.Byte[] authData) [0x0001f] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.NativeDriver.Authenticate (System.String authMethod, System.Boolean reset) [0x00017] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.NativeDriver.Open () [0x00317] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Driver.Open () [0x0000b] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Driver.Create (MySql.Data.MySqlClient.MySqlConnectionStringBuilder settings) [0x0004d] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection () [0x00000] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection () [0x00083] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver () [0x00042] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.GetConnection () [0x0001c] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlConnection.Open () [0x0016c] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at DBRun.LoginProc.UserIns (System.String inId, System.String inPassword) [0x0000d] in D:\Unity Source\TWD2\Assets\Script\DB\DB.cs:63 
+[2021-08-20 16:39:04:941] MySql User Info Select : MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication method 'caching_sha2_password' not supported by any of the available plugins.
+  at MySql.Data.MySqlClient.Authentication.AuthenticationPluginManager.GetPlugin (System.String method) [0x0001d] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.GetPlugin (System.String method, MySql.Data.MySqlClient.NativeDriver driver, System.Byte[] authData) [0x0001f] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.NativeDriver.Authenticate (System.String authMethod, System.Boolean reset) [0x00017] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.NativeDriver.Open () [0x00317] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Driver.Open () [0x0000b] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.Driver.Create (MySql.Data.MySqlClient.MySqlConnectionStringBuilder settings) [0x0004d] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection () [0x00000] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection () [0x00083] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver () [0x00042] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlPool.GetConnection () [0x0001c] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at MySql.Data.MySqlClient.MySqlConnection.Open () [0x0016c] in <2c8fc0407a5848dfa91f594842a803e7>:0 
+  at System.Data.Common.DbDataAdapter.QuietOpen (System.Data.IDbConnection connection, System.Data.ConnectionState& originalState) [0x0000c] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at System.Data.Common.DbDataAdapter.FillInternal (System.Data.DataSet dataset, System.Data.DataTable[] datatables, System.Int32 startRecord, System.Int32 maxRecords, System.String srcTable, System.Data.IDbCommand command, System.Data.CommandBehavior behavior) [0x0002d] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at System.Data.Common.DbDataAdapter.Fill (System.Data.DataTable[] dataTables, System.Int32 startRecord, System.Int32 maxRecords, System.Data.IDbCommand command, System.Data.CommandBehavior behavior) [0x0007c] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at System.Data.Common.DbDataAdapter.Fill (System.Data.DataTable dataTable) [0x00034] in <290425a50ff84a639f8c060e2d4530f6>:0 
+  at (wrapper remoting-invoke-with-check) System.Data.Common.DbDataAdapter.Fill(System.Data.DataTable)
+  at DBRun.LoginProc.UserSel (System.String inid, System.String inPassword) [0x00042] in D:\Unity Source\TWD2\Assets\Script\DB\DB.cs:114 
